@@ -116,3 +116,43 @@ body {
     padding: 80px 5%;
   }
 }
+
+.galeria {
+  background: white;
+  color: #111;
+  padding: 120px 8%;
+}
+
+.galeria h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+.item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s;
+}
+
+.item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
