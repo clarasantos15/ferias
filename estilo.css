@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #ff2e63;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* HERO */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 800;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.hero-title span {
+  display: block;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* ABOUT */
+
+.about {
+  background: white;
+  color: #111;
+  padding: 120px 8%;
+}
+
+.about h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.about p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* TIMELINE */
+
+.timeline {
+  background: #111;
+  padding: 120px 8%;
+}
+
+.timeline h2 {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  font-family: 'Playfair Display', serif;
+}
+
+.timeline-items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.item span {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+.item p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: 0.3s ease;
+}
+
+.item:hover p {
+  transform: translateX(10px);
+  color: #ff2e63;
+}
+
+/* QUOTE */
+
+.frase {
+  background: #ff2e63;
+  padding: 150px 8%;
+  text-align: center;
+}
+
+.frase h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 5%;
+  }
+
+  .about, .timeline, .frase {
+    padding: 80px 5%;
+  }
+}
